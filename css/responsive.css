@@ -1,0 +1,38 @@
+@media screen and (max-width: 1199px){
+    
+}
+@media screen and (max-width: 992px){
+    #toggle{
+        display: block;
+    }
+    .list{
+        position: absolute;
+        background-color: inherit;
+        top: 100%;
+        width: 100%;
+        padding: .6rem 0;
+        transform-origin: 50% 0;
+        transform: scaleY(0);
+        transition: 250ms ease-out;
+    }
+    .list.active{
+        transform: scaleY(1);
+    }
+    .list .item{
+        display: block;
+        text-align: center;
+    }
+    .list .item a{
+        display: block;
+        transition: 450ms ease-out;
+    }
+}
+@media screen and (max-width: 768px){
+
+}
+@media screen and (max-width: 480px){
+    
+}
+@media screen and (max-width: 320px){
+    
+}

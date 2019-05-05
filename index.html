@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Nav</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+</head>
+<body>
+    <nav id="menu">
+        <div id="toggle">
+            <div class="one"></div>
+            <div class="two"></div>
+            <div class="three"></div>
+        </div>
+        <img src="https://coders.tokyo/images/favicon.png" alt="" class="avatar">
+        <ul class="list">
+            <li class="item"><a href="#">Home</a></li>
+            <li class="item"><a href="#">Blogs</a></li>
+            <li class="item"><a href="#">Pricing</a></li>
+            <li class="item"><a href="#">About Us</a></li>
+        </ul>
+    </nav>
+
+    <script>
+        var buttonMenu = document.getElementById('toggle');
+        var list = document.querySelector('#menu .list');
+        buttonMenu.addEventListener('click', function(){
+            list.classList.toggle('active');
+        })
+    </script>
+</body>
+</html>
